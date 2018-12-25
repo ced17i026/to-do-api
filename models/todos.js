@@ -15,3 +15,6 @@ var todoSchema = new mongoose.Schema({
         default: Date.now()
     }
 })
+
+var todo = mongoose.model("todos",todoSchema);
+module.exports = todo;
